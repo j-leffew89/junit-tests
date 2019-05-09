@@ -1,8 +1,7 @@
-import java.util.Stack;
+import java.util.Arrays;
 
 public class Kitchen {
 
-    int count = 0;
     String[] tortillas = new String[1];
 
     public boolean isEmpty(){
@@ -10,11 +9,9 @@ public class Kitchen {
     }
 
     public void add(String tortilla){
-        if(isEmpty()){
-            tortillas[0] = tortilla;
-        }else {
-            tortillas[tortillas.length+1] = tortilla;
-        }
+        String[] copy = Arrays.copyOf(tortillas, tortillas.length+1);
+        copy[tortillas.length-1] = tortilla;
+        tortillas = copy;
     }
 
     public void remove(String tortilla){
@@ -35,8 +32,9 @@ public class Kitchen {
     }
     
     public void printAll(){
-        for (int i = 0; i < tortillas.length; i++){
-            System.out.println("tortillas[i] = " + tortillas[i]);
+        for (int i = tortillas.length-1; i >= 0; i--){
+            if(tortillas[i] != null)
+            System.out.println("tortillas["+i+"] " + tortillas[i]);
         }
     }
 

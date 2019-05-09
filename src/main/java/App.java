@@ -3,6 +3,7 @@ public class App {
         Kitchen myKitchen = new Kitchen();
         myKitchen.add("blue corn");
         myKitchen.add("white corn");
+        myKitchen.add("yellow corn");
         myKitchen.printAll();
     }
 }
