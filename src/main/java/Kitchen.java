@@ -2,7 +2,11 @@ import java.util.Arrays;
 
 public class Kitchen {
 
-    String[] tortillas = new String[1];
+    String[] tortillas;
+
+    public Kitchen(){
+        this.tortillas = new String[0];
+    }
 
     public boolean isEmpty(){
         return tortillas.length == 0;
@@ -10,17 +14,14 @@ public class Kitchen {
 
     public void add(String tortilla){
         String[] copy = Arrays.copyOf(tortillas, tortillas.length+1);
-        copy[tortillas.length-1] = tortilla;
+        copy[tortillas.length] = tortilla;
         tortillas = copy;
     }
 
-    public void remove(String tortilla){
-        for (int i = 0; i < tortillas.length; i++){
-            if(tortillas[i].equals(tortilla)){
-                tortillas[i] = null;
-                tortillas[i] = tortillas[tortillas.length];
-            }
-        }
+    public void pop(){
+        tortillas[tortillas.length-1] = null;
+        String[] copy = Arrays.copyOf(tortillas, tortillas.length-1);
+        tortillas = copy;
     }
 
     public boolean contains(String tortilla){
@@ -33,7 +34,6 @@ public class Kitchen {
     
     public void printAll(){
         for (int i = tortillas.length-1; i >= 0; i--){
-            if(tortillas[i] != null)
             System.out.println("tortillas["+i+"] " + tortillas[i]);
         }
     }
