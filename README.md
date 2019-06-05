@@ -29,24 +29,28 @@ We will use the JUnit 4 dependency thru Maven, so just start by [creating a Mave
 
 ### Exercise 
 
-We will follow the best practices of TDD and we will build the tests first and write production code once we see the test fail first. We will create a `BlogApp` class for a blog application, these are the requirements for that feature:
-
-The app should be able to create posts, each post should contain a `userId, title and content`.
+We will follow the best practices of TDD and we will build the tests first and write production code once we see the test fail first. We will create a `Student` class for a grades application, these are the requirements for that feature:
  
-- `userId` should be a `long` number used to represent a "user" in our application.
-- `title` is a `String` that holds the title of the blog post.
-- `content` is a `String` that contains the whole post of the blog post.
+- `id` should be a `long` number used to represent a "unique user" in our application.
+- `name` is a `String` that holds the name of the student.
+- `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
-1. Create a `BlogAppTest.java` file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our blog application so your should be able to test and create the following:
+1. Create a `Student.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
 
-- A Java class named `Post` with a constructor that includes all 3 private fields and each one has their respective getter method.
-- A Java class named `BlogApp` that has the following:
-    - An `ArrayList` of Post instances called `posts`.
-    - A `savePost()` method that takes a `Post` as an argument and adds it to an ArrayList, it returns the saved Post.
-    - A `findAllPosts()` method takes no arguments and returns the ArrayList of `Post` elements.
-    - A `findPost` method that takes in an id as an argument and returns the specific `Post` corresponding to the index from the ArrayList.
-- At the end of the exercise you will ended up with a `BlogApp.java` class, a `BlogAppTest.java` class and a `Post.java` class.
+- The `Student` class should have a constructor that sets the name and id property, and initializes the grades property as an empty ArrayList.
+- The `Student` class should have the following methods:
+    ```java
+        // returns the student's id
+        public long getId();  
+        // returns the student's name
+        public String getName();
+        // adds the given grade to the grades property
+        public void addGrade(int grade);
+        // returns the average of the students grades
+        public double getGradeAverage();
+    ```
+- At the end of the exercise you will ended up with a `Student.java` class and a `StudentTest.java` class.
 
 #### Bonus
 
-- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updatePost()` and `deletePost()`.
+- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()`.
