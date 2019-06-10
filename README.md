@@ -27,7 +27,9 @@ We will use the JUnit 4 dependency thru Maven, so just start by [creating a Mave
 - The `KitchenTest.java` class, should be created in the following directory `/src/test/java`.
 - The `App.java` class file contains the implementation code. An "implementation" means the code that is meant to solve a problem, fix a bug, or add a feature.
 
-### Exercise 
+### Exercises
+
+####  Part One: Red, Green, Refactor 
 
 We will follow the best practices of TDD and we will build the tests first and write production code once we see the test fail first. We will create a `Student` class for a grades application, these are the requirements for that feature:
  
@@ -54,3 +56,13 @@ We will follow the best practices of TDD and we will build the tests first and w
 #### Bonus
 
 - Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()`.
+
+#### Part Two: Testing Legacy Code
+
+For the last part, you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a couple of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
+
+Create a test for each of the following concerns and provide any extra tests as needed. 
+
+1. A Cohort instance always have students before being used.
+1. A Cohort instance can add a `Student` to the `List` of students.
+1. A Cohort instance can get the list of students.

@@ -17,5 +17,20 @@ public class App {
 
         myKitchen.pop();
         myKitchen.printAll();
+
+        Cohort andromeda = new Cohort();
+        Student fer = new Student("fer");
+        Student stacy = new Student("stacy");
+
+        fer.addGrade(100);
+        fer.addGrade(90);
+        stacy.addGrade(50);
+        stacy.addGrade(100);
+
+        andromeda.addStudent(fer);
+        andromeda.addStudent(stacy);
+
+        System.out.println("andromeda.getCohortAverage() = " + andromeda.getCohortAverage());
+
     }
 }
