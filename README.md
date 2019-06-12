@@ -1,17 +1,12 @@
 # Testing Legacy Code with JUnit
 
-We will use the JUnit 4 dependency thru Maven, so just start by [creating a Maven project](https://java.codeup.com/java-iii/deployment-and-dependencies/#creating-a-new-maven-project-with-intellij) and add the following dependency to your `pom.xml` file.
+### Project Structure
+- The `Kitchen.java` class file already has a lot of functionality done for us, during our process we will test every single method and we might find some opportunities to improve and refactor the original code, but first let's talk about the basics.
+- The `KitchenTest.java` class, should be created in the following directory `/src/test/java`.
+- The `App.java` class file contains the implementation code. An "implementation" means the code that is meant to solve a problem, fix a bug, or add a feature.
 
-```xml
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
-    <scope>test</scope>
-</dependency>
-```
 
-## Getting Started
+### Getting Started
 1. Fork this repository to make a copy on your own GitHub account.
 1. Make sure that your browser is showing this project in your own repositories list in your own account.
 1. Click the green button on the right that says "Clone or Download". 
@@ -21,15 +16,9 @@ We will use the JUnit 4 dependency thru Maven, so just start by [creating a Mave
     - If you're using command line, then execute the following command line command: `git clone git@github.com:your-github-username/junit-tests.git`.
 1. Once cloned to your projects directory, open up the project.
 
-
-### Project Structure
-- The `Kitchen.java` class file already has a lot of functionality done for us, during our process we will test every single method and we might find some opportunities to improve and refactor the original code, but first let's talk about the basics.
-- The `KitchenTest.java` class, should be created in the following directory `/src/test/java`.
-- The `App.java` class file contains the implementation code. An "implementation" means the code that is meant to solve a problem, fix a bug, or add a feature.
-
 ### Exercises
 
-####  Part One: Red, Green, Refactor 
+#### Part One: Red, Green, Refactor 
 
 We will follow the best practices of TDD and we will build the tests first and write production code once we see the test fail first. We will create a `Student` class for a grades application, these are the requirements for that feature:
  
@@ -53,13 +42,13 @@ We will follow the best practices of TDD and we will build the tests first and w
     ```
 - At the end of the exercise you will ended up with a `Student.java` class and a `StudentTest.java` class.
 
-#### Bonus
+#### Part One Bonus
 
 - Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()`.
 
 #### Part Two: Testing Legacy Code
 
-For the last part, you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a couple of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
+For the last part, once you finished the `Student.java` class, you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a couple of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
 
 Create a test for each of the following concerns and provide any extra tests as needed. 
 
