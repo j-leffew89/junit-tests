@@ -20,13 +20,13 @@
 
 #### Part One: Red, Green, Refactor 
 
-We will follow the best practices of TDD and we will build the tests first and write production code once we see the test fail first. We will create a `Student` class for a grades application, these are the requirements for that feature:
+We will follow the best practices of TDD and we will create the `tests first` and write production code once we see the test fail first. We will create a `Student` and a `StudentTest` class for a grades application, let's analyse the requirements for the `Student` class:
  
 - `id` should be a `long` number used to represent a "unique user" in our application.
 - `name` is a `String` that holds the name of the student.
 - `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
-- Create a `Student.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
+1. Create a `StudentTest.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
 
     - The `Student` class should have a constructor that sets the name and id property, and initializes the grades property as an empty ArrayList.
     - The `Student` class should have the following methods:
@@ -40,11 +40,7 @@ We will follow the best practices of TDD and we will build the tests first and w
         // returns the average of the students grades
         public double getGradeAverage();
     ```
-At the end of the exercise you will ended up with a `Student.java` class and a `StudentTest.java` class.
-
-#### Part One Bonus
-
-- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()`.
+At the end of the exercise you will ended up with a `Student.java` and a `StudentTest.java` class.
 
 #### Part Two: Testing Legacy Code
 
@@ -55,3 +51,7 @@ Create a test for each of the following concerns and provide any extra tests as 
 1. A Cohort instance always have students before being used.
 1. A Cohort instance can add a `Student` to the `List` of students.
 1. A Cohort instance can get the list of students.
+
+#### Bonus
+
+- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()` in the `Student` class.
