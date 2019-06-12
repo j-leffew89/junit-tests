@@ -26,10 +26,10 @@ We will follow the best practices of TDD and we will build the tests first and w
 - `name` is a `String` that holds the name of the student.
 - `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
-1. Create a `Student.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
+- Create a `Student.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
 
-- The `Student` class should have a constructor that sets the name and id property, and initializes the grades property as an empty ArrayList.
-- The `Student` class should have the following methods:
+    - The `Student` class should have a constructor that sets the name and id property, and initializes the grades property as an empty ArrayList.
+    - The `Student` class should have the following methods:
     ```java
         // returns the student's id
         public long getId();  
@@ -40,7 +40,7 @@ We will follow the best practices of TDD and we will build the tests first and w
         // returns the average of the students grades
         public double getGradeAverage();
     ```
-- At the end of the exercise you will ended up with a `Student.java` class and a `StudentTest.java` class.
+At the end of the exercise you will ended up with a `Student.java` class and a `StudentTest.java` class.
 
 #### Part One Bonus
 
