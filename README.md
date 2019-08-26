@@ -12,15 +12,15 @@
 
 ### Exercises
 
-#### Part One: Red, Green, Refactor 
+#### Part One: The Test Driven Cycle (Red, Green, Refactor) 
 
-We will follow the best practices of TDD and we will create the `tests first` and write production code once we see the test fail first. We will create a `Student` and a `StudentTest` class for a grades application, let's analyse the requirements for the `Student` class:
+We will follow the best practices of TDD and we will create our tests first and write production code once we see the test fail. We will create a `Student` and a `StudentTest` class for a grades application, let's analyse the requirements for the `Student` class:
  
 - `id` should be a `long` number used to represent a "unique user" in our application.
 - `name` is a `String` that holds the name of the student.
 - `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
-1. Create a `StudentTest.java` class file inside of `src/test/java` and remember to write the test before the actual code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
+1. Create a `StudentTest.java` class file inside of `src/test/java` and remember to write the test before the actual production code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application so your should be able to test and create the following:
 
     - The `Student` class should have a constructor that sets the name and id property, and initializes the grades property as an empty ArrayList.
     - The `Student` class should have the following methods:
