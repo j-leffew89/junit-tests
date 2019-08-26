@@ -1,11 +1,5 @@
 # Testing Legacy Code with JUnit
 
-### Project Structure
-- The `Kitchen.java` class file already has a lot of functionality done for us, during our process we will test every single method and we might find some opportunities to improve and refactor the original code, but first let's talk about the basics.
-- The `KitchenTest.java` class, should be created in the following directory `/src/test/java`.
-- The `App.java` class file contains the implementation code. An "implementation" means the code that is meant to solve a problem, fix a bug, or add a feature.
-
-
 ### Getting Started
 1. Fork this repository to make a copy on your own GitHub account.
 1. Make sure that your browser is showing this project in your own repositories list in your own account.
