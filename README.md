@@ -44,10 +44,11 @@ Once you finished the `Student.java` class.
  
 1. Checkout to the `part-two` branch, there you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a lot of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
 
-1. Create a test for each of the following concerns and code any extra tests as needed. 
-    - A Cohort instance always have students before being used.
-    - A Cohort instance can add a `Student` to the `List` of students.
-    - A Cohort instance can get the list of students.
+1. Create a test for each of the following concerns and code any extra tests as you think are needed.
+    - A `Cohort` instance can get the average and it's calculated correctly. 
+    - A `Cohort` instance can add a `Student` to the `List` of students.
+    - A `Cohort` instance can get the `List` of students.
+1. Go back to the `StudentTest` class and refactor the code to avoid repetition in the test cases, the use of the `@Before` annotation might be useful to achieve this.
 
 ### Bonus
 
