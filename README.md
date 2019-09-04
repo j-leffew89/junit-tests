@@ -20,6 +20,7 @@ We will follow the best practices of TDD and we will create our tests first and 
 - `name` is a `String` that holds the name of the student.
 - `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
+1. Create a new branch called `part-one` and read carefully the next instructions.
 1. Create a `StudentTest.java` class file inside of `src/test/java` and remember to write the test before the actual production code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application, you should be able to test and create the following requirements:
 
     - The `Student` class should have a constructor that sets both the name and id property, it initializes the grades property as an empty ArrayList.
@@ -34,6 +35,7 @@ We will follow the best practices of TDD and we will create our tests first and 
         // returns the average of the students grades
         public double getGradeAverage();
     ```
+1. As always, commit and push all your changes once you're done.   
 _At the end of the exercise you will ended up with a `Student.java` and a `StudentTest.java` class._
 
 ### Part Two: Testing Legacy Code
@@ -43,10 +45,9 @@ Once you finished the `Student.java` class.
 1. Checkout to the `part-two` branch, there you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a lot of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
 
 1. Create a test for each of the following concerns and code any extra tests as needed. 
-
-- A Cohort instance always have students before being used.
-- A Cohort instance can add a `Student` to the `List` of students.
-- A Cohort instance can get the list of students.
+    - A Cohort instance always have students before being used.
+    - A Cohort instance can add a `Student` to the `List` of students.
+    - A Cohort instance can get the list of students.
 
 ### Bonus
 
