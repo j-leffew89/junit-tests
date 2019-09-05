@@ -38,18 +38,22 @@ We will follow the best practices of TDD and we will create our tests first and 
 1. As always, commit and push all your changes once you're done.   
 _At the end of the exercise you will ended up with a `Student.java` and a `StudentTest.java` class._
 
+#### Bonus
+
+- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()` in the `Student` class.
+
 ### Part Two: Testing Legacy Code
 
 Once you finished the `Student.java` class.
  
 1. Checkout to the `part-two` branch, there you will find a `Cohort.java` class inside the `src/main/java` folder, this class has already a lot of methods to calculate the cohort average grade and add a student. Let's go ahead and make sure there's sufficient tests for this class to be deploy to production:
 
-1. Create a test for each of the following requirements and add any extra tests as you think are needed.
-    - A `Cohort` instance can get the `List` of students.
+1. Create a `CohortTest` class and create a unit test for each of the following requirements:
+    - A `Cohort` instance can get the current `List` of students.
     - A `Cohort` instance can add a `Student` to the `List` of students.
     - A `Cohort` instance can get the average and it's being calculated correctly. 
-1. Go back to the `StudentTest` class and refactor the code to avoid repetition in the test cases, the use of the `@Before` annotation might be useful to achieve this.
+1. Go back to the `StudentTest` class and refactor the code to avoid any repetition in the test cases, the use of the `@Before` annotation will be useful to achieve this, do the same with this new `CohortTest` class if you find any code repetition as well.
 
-### Bonus
+#### Bonus
 
-- Go ahead and try to add the rest of the `CRUD` tests and functionality, write the methods for `updateGrade()` and `deleteGrade()` in the `Student` class.
+- Follow the TDD cycle and create a new feature to find students by their ID like: `findStudentById(long id)` in the `Cohort` class, remember to create the tests first before any production code.
