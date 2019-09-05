@@ -12,7 +12,7 @@
 
 ## Exercises
 
-### Part One: The Test Driven Cycle (Red, Green, Refactor) 
+### Part One: The Test Driven Development Cycle (Red, Green, Refactor) 
 
 We will follow the best practices of TDD and we will create our tests first and write production code once we see the test fail. We will create a `Student` and a `StudentTest` class for a grades application, let's analyse the requirements for the `Student` class:
  
