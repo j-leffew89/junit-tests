@@ -20,7 +20,7 @@ We will follow the best practices of TDD and we will create our tests first and 
 - `name` is a `String` that holds the name of the student.
 - `grades` is an `ArrayList` that contains a list of `Integer` numbers.
 
-1. Create a new branch called `exercise-part-one` and read carefully the next instructions.
+1. Create a new branch called `students-tests` and read carefully the next instructions.
 1. Create a `StudentTest.java` class file inside of `src/test/java` (you might have to create these folders yourself) and remember to write the test before the actual production code. We will simulate the `C(reate) R(ead)` from the `CRUD` functionality in our grades application, you should be able to test and create the following requirements:
 
     - The `Student` class should have a constructor that sets both the name and id property, it initializes the grades property as an empty ArrayList.
