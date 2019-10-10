@@ -50,8 +50,8 @@ Once you are done with the `Student.java` class.
 
 1. Start by creating a new branch called: `cohorts-tests`.
 1. Then create a `CohortTest` class and build a test for each of the following requirements:
-    - A `Cohort` instance can get the current `List` of students.
     - A `Cohort` instance can add a `Student` to the `List` of students.
+    - A `Cohort` instance can get the current `List` of students.
     - A `Cohort` instance can get the average and it's being calculated correctly. 
 1. Go back to the `StudentTest` class and refactor the code to avoid any repetition in the test cases, the use of the `@Before` annotation will be useful to achieve this, do the same with this new `CohortTest` class if you find any code repetition as well.
 
