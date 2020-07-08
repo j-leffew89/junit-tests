@@ -25,16 +25,22 @@ We will follow the best practices of TDD, and we will create our tests first and
 
     - The `Student` class should have a constructor that sets both the name and id property, it initializes the grades property as an empty ArrayList.
     - The `Student` class should have the following methods:
-    ```java
-        // returns the student's id
-        public long getId();  
-        // returns the student's name
-        public String getName();
-        // adds the given grade to the grades list
-        public void addGrade(int grade);
-        // returns the average of the students grades
-        public double getGradeAverage();
-    ```
+```java
+    // returns the student's id
+    public long getId(){...}
+
+    // returns the student's name
+    public String getName(){...}
+
+    // adds the given grade to the grades list
+    public void addGrade(int grade){...}
+  
+    // returns the list of grades
+    public ArrayList<Integer> getGrades(){...}
+
+    // returns the average of the students grades
+    public double getGradeAverage(){...}
+```
 1. As always, commit and push all your changes once you're done.   
 _At the end of the exercise you will end up with a `Student.java` and a `StudentTest.java` class._
 
